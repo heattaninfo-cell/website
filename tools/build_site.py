@@ -28,14 +28,27 @@ CATEGORIES = [
      "Küçük alanlardan büyük ölçekli projelere kadar ısıtma sistemlerini güvenli ve otomatik yöneten kontrol panoları."),
 ]
 
-# Metinler heattan.com.tr/urunlerimiz sayfasından alınmıştır.
+COMMON_FILM_FEATURES = [
+    "Bütün ısıtma yüzeyinde aynı sıcaklık, homojen ısı dağılımı",
+    "Esnek, dayanıklı ve 1 mm'den ince",
+    "Termostat kontrolüyle ayarlanan sıcaklık sabit kalır, tüketim minimumda tutulur",
+    "Kurulum ve işletme maliyeti eski ısıtma sistemlerinden daha ekonomik",
+    "Doğalgazın olmadığı yerlerde ekonomik ısıtma çözümü",
+    "Film üzerindeki sıcaklık ortalama 40-50°C, taban sensörüyle istenen ısıda sabitlenir",
+    "Termostatsız kullanıma uygun değildir",
+]
+
+# Metinler heattan.com.tr/urunlerimiz sayfasından alınmıştır; teknik özellikler (specs) üretici sayfalarından.
 PRODUCTS = [
     dict(slug="rexva-xt-308-220w-karbon-film", cat="karbon-film", name="Rexva XT-308 220W Karbon Film",
          img="rexva-xt-308-220w", badge="220W",
          short="Parke ve laminat zemin altı için yüksek verimli karbon film.",
          desc=["Rexva XT-308 220W karbon film, parke ve laminat zemin altı uygulamalar için geliştirilmiş yüksek verimli yerden ısıtma sistemidir. İnce ve esnek yapısı sayesinde zemin yüksekliğini artırmadan kolay montaj imkânı sunar.",
                "Homojen ısı dağılımı sağlayarak yaşam alanlarının her noktasında dengeli sıcaklık oluşturur. Düşük enerji tüketimi ve termostat uyumu sayesinde ekonomik ve uzun ömürlü bir ısıtma çözümüdür."],
-         features=["Parke ve laminat altı uygulama", "Zemin yüksekliğini artırmaz", "Homojen ısı dağılımı", "Termostat uyumlu"]),
+         features=["Parke ve laminat altı uygulama", "Zemin yüksekliğini artırmaz", "Homojen ısı dağılımı", "Termostat uyumlu"],
+         specs=[("Ürün kodu", "XT-308 220 W"), ("Ölçüler", "800 mm x 0,338 mm x 100 m"), ("Güç tüketimi", "220 W/m"),
+                ("Paket uzunluğu", "100 m"), ("Ağırlık", "40 kg"), ("Film görünümü", "Şeffaf film (Transparent)")],
+         details=COMMON_FILM_FEATURES),
     dict(slug="rexva-xt-308-240w-karbon-film", cat="karbon-film", name="Rexva XT-308 240W Karbon Film",
          img="rexva-xt-308-240w", badge="240W",
          short="Geniş alanlarda hızlı ve güçlü ısınma.",
@@ -54,6 +67,33 @@ PRODUCTS = [
          desc=["Hot Film SH-303 T 67W karbon film, dar alanlar ve özel uygulamalar için tasarlanmış düşük tüketimli yerden ısıtma çözümüdür. Esnek yapısı sayesinde farklı yüzeylere kolayca uygulanabilir.",
                "Düşük watt değeri ile kontrollü ısıtma sağlayarak küçük alanlarda enerji tasarrufu sunar. Homojen ısı dağılımı sayesinde konforlu ve dengeli bir kullanım sağlar."],
          features=["Dar ve özel alanlar için", "Düşük tüketim, kontrollü ısıtma", "Farklı yüzeylere uygulanabilir"]),
+    dict(slug="hot-film-sh-308m-220w-karbon-film", cat="karbon-film", name="Hot Film SH-308M 220W Karbon Film",
+         img="hot-film-sh-308m-220w", badge="220W", light=True,
+         short="Ev, ofis, cami, parke ve halı altı için 80 cm karbon film.",
+         desc=["Hot Film SH-308M 220W karbon film; ev, ofis ve cami ısıtması ile parke altı ve halı altı uygulamalar için tasarlanmış, 80 cm genişliğinde mat görünümlü ısıtıcı filmdir.",
+               "Tüm ısıtma yüzeyinde aynı sıcaklığı sağlayarak mekânın bazı yerlerinin sıcak, bazı yerlerinin soğuk kalmasını önler ve alanın tamamını eşit derecede ısıtır. Termostat kontrolü ile ayarlanan ortam sıcaklığı korunur, enerji tüketimi minimum seviyede kalır."],
+         features=["Ev, ofis ve cami ısıtması", "Parke ve halı altı uygulama", "80 cm genişlik, 220 W/m", "Termostat kontrolüyle ekonomik"],
+         specs=[("Ürün kodu", "SH-308M 220 W"), ("Ölçüler", "800 mm x 0,338 mm x 100 m"), ("Güç tüketimi", "220 W/m"),
+                ("Paket uzunluğu", "100 m (metre ile de satılır)"), ("Ağırlık", "42 kg (100 m rulo)"), ("Film görünümü", "Mat film (Milk White)")],
+         details=COMMON_FILM_FEATURES),
+    dict(slug="rexva-xt-306-165w-karbon-film", cat="karbon-film", name="Rexva XT-306 165W Karbon Film",
+         img="rexva-xt-306-165w", badge="165W", light=True,
+         short="60 cm genişlikte, dar alanlara uygun karbon film.",
+         desc=["Rexva XT-306 165W karbon film; ev, ofis ve cami ile parke altı ve halı altı uygulamalar için 60 cm genişliğinde, şeffaf görünümlü ısıtıcı filmdir. Daha dar genişliği sayesinde koridor ve küçük odalarda yerleşimi kolaylaştırır.",
+               "Homojen ısı dağılımı ile mekânın tamamını eşit derecede ısıtır. Termostat kontrolü sayesinde ayarlanan ortam sıcaklığının sürekliliği sağlanır ve enerji tüketimi minimum seviyede kalır."],
+         features=["60 cm genişlik, 165 W/m", "Parke ve halı altı uygulama", "Ev, ofis ve cami için", "Termostat kontrolüyle ekonomik"],
+         specs=[("Ürün kodu", "XT-306 165 W"), ("Ölçüler", "600 mm x 0,338 mm x 100 m"), ("Güç tüketimi", "165 W/m"),
+                ("Paket uzunluğu", "100 m"), ("Ağırlık", "40 kg"), ("Film görünümü", "Şeffaf film (Transparent)")],
+         details=COMMON_FILM_FEATURES),
+    dict(slug="hot-film-sh-305-e-200w-karbon-film", cat="karbon-film", name="Hot Film SH-305 E 200W Sauna Karbon Film",
+         img="hot-film-sh-305-e-200w", badge="Sauna · 200W", light=True,
+         short="Yüksek sıcaklık tipi, sauna uygulamaları için karbon film.",
+         desc=["Hot Film SH-305 E 200W, yüksek sıcaklık (High Temperature) tipinde üretilmiş, sauna uygulamaları için önerilen 50 cm genişliğinde karbon filmdir. Ev, ofis ve cami ısıtmasında da kullanılabilir.",
+               "Esnek ve dayanıklı yapısı, 1 mm'den ince kalınlığı ve homojen ısı dağılımı ile uygulandığı yüzeyin tamamında eşit sıcaklık sağlar. Termostat kontrolüyle ayarlanan sıcaklıkta sabit ve ekonomik çalışır."],
+         features=["Yüksek sıcaklık tipi (sauna)", "50 cm genişlik, 200 W/m", "150 m rulo", "Termostat kontrolüyle ekonomik"],
+         specs=[("Ürün kodu", "SH-305 E 200 W"), ("Ölçüler", "500 mm x 0,338 mm x 150 m"), ("Güç tüketimi", "200 W/m"),
+                ("Paket uzunluğu", "150 m"), ("Ağırlık", "38 kg"), ("Film görünümü", "Yüksek sıcaklık (High Temperature)")],
+         details=COMMON_FILM_FEATURES),
     dict(slug="zemin-isitici-kablo-mat", cat="kablo", name="Zemin Isıtıcı Kablo Mat",
          img="isitici-kablo-mat", badge="Kablo",
          short="Seramik, mermer ve beton zeminler için güvenli ısıtma.",
@@ -129,8 +169,8 @@ PRODUCTS = [
          features=["IoT / WiFi ile merkezi yönetim", "Yüksek güç kapasitesi", "Isıtma ve iklimlendirme"]),
 ]
 
-HOME_FEATURED = ["rexva-xt-308-220w-karbon-film", "hot-film-sh-308m-240w-karbon-film", "zemin-isitici-kablo-mat",
-                 "shr-2p-kablo-isitici", "uth-2000-wifi-termostat", "uth-200-termostat",
+HOME_FEATURED = ["rexva-xt-308-220w-karbon-film", "hot-film-sh-308m-220w-karbon-film", "rexva-xt-306-165w-karbon-film",
+                 "hot-film-sh-305-e-200w-karbon-film", "uth-2000-wifi-termostat", "uth-200-termostat",
                  "tp-06-50-wifi-kontrol-panosu", "klima-kontrol-panosu"]
 
 BY_SLUG = {p["slug"]: p for p in PRODUCTS}
@@ -261,7 +301,7 @@ def footer(r, wa_msg):
 def card(r, p, loc):
     url = f"{r}urunlerimiz/{p['slug']}/index.html"
     return f"""<article class="pcard">
-  <a class="pimg" href="{url}"><img src="{r}img/urunler/{p['img']}.jpg" alt="{e(p['name'])}" width="640" height="560" loading="lazy"><span class="tag">{e(p['badge'])}</span></a>
+  <a class="pimg{' light' if p.get('light') else ''}" href="{url}"><img src="{r}img/urunler/{p['img']}.jpg" alt="{e(p['name'])}" width="640" height="560" loading="lazy"><span class="tag">{e(p['badge'])}</span></a>
   <div class="pbody">
     <span class="pcat">{e(CAT_NAME[p['cat']])}</span>
     <h3><a href="{url}">{e(p['name'])}</a></h3>
@@ -373,6 +413,12 @@ def build_detail(p):
         related += [q for q in PRODUCTS if q["cat"] != p["cat"]][: 4 - len(related)]
     desc = "\n".join(f"<p>{e(t)}</p>" for t in p["desc"])
     feats = "\n".join(f"<li>{e(f)}</li>" for f in p["features"])
+    extra = ""
+    if p.get("specs"):
+        rows = "".join(f"<tr><th>{e(k)}</th><td>{e(v)}</td></tr>" for k, v in p["specs"])
+        extra += f'<h2>Teknik özellikler</h2>\n<table class="specs">{rows}</table>\n'
+    if p.get("details"):
+        extra += "<h2>Özellikler</h2>\n<ul class=\"dlist\">" + "".join(f"<li>{e(d)}</li>" for d in p["details"]) + "</ul>\n"
     ld = json.dumps({
         "@context": "https://schema.org", "@type": "Product", "name": p["name"], "category": cat,
         "description": " ".join(p["desc"]), "brand": {"@type": "Brand", "name": p["name"].split()[0]},
@@ -382,7 +428,7 @@ def build_detail(p):
     <div class="wrap">
       <nav class="crumbs" aria-label="Konum"><a href="{r}index.html">Anasayfa</a><span>/</span><a href="../index.html">Ürünlerimiz</a><span>/</span><a href="../index.html#{p['cat']}">{e(cat)}</a></nav>
       <div class="dgrid">
-        <div class="dimg"><img src="{r}img/urunler/{p['img']}.jpg" alt="{e(p['name'])}" width="640" height="560" fetchpriority="high"><span class="tag">{e(p['badge'])}</span></div>
+        <div class="dimg{' light' if p.get('light') else ''}"><img src="{r}img/urunler/{p['img']}.jpg" alt="{e(p['name'])}" width="640" height="560" fetchpriority="high"><span class="tag">{e(p['badge'])}</span></div>
         <div>
           <span class="eyebrow">{e(cat)}</span>
           <h1>{e(p['name'])}</h1>
@@ -400,6 +446,7 @@ def build_detail(p):
       <div class="dtext card">
         <h2>Ürün hakkında</h2>
         {desc}
+        {extra}
       </div>
     </div>
   </section>

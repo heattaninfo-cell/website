@@ -228,3 +228,16 @@ footer img{height:30px;width:auto}
   .page-hero .btn-row .btn,.detail .btn-row .btn{flex:1 1 100%}
   .dtext{padding:20px}
 }
+
+/* Açık arka planlı ürün görselleri + teknik tablo */
+.pimg.light,.dimg.light{background:#fff}
+.pimg.light{border-bottom:1px solid var(--line)}
+.dimg.light{border:1px solid var(--line);box-shadow:var(--shadow)}
+.dtext h2{margin-top:1.4em}
+.dtext h2:first-child{margin-top:0}
+.specs{width:100%;max-width:820px;border-collapse:collapse;font-size:.95rem}
+.specs th,.specs td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.specs th{width:38%;color:var(--muted);font-weight:600}
+.specs tr:nth-child(odd){background:#fffaf5}
+.dlist{margin:0;padding-left:1.2em;color:var(--muted);max-width:820px}
+.dlist li{margin:.3em 0}
